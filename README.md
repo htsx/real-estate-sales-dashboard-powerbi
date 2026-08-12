@@ -12,7 +12,7 @@ by Mayank Gautam, licensed under [CC BY-NC 4.0](https://creativecommons.org/lice
 ### 1. Executive Overview
 A macro-level snapshot of the housing market for quick, high-level decision-making.
 - **KPI Cards** — Total Properties (22K), Total Sales Value ($12bn), Average Price ($540.10K), Median Price ($450.00K), Average Price per SqFt ($259.67)
-- **Sales Trend (Line Chart)** — Average sale price over time (May 2014–May 2015), revealing seasonal volatility and pricing spikes
+- **Sales Trend (Line Chart)** — Average sale price over time (May 2014–May 2015), revealing price volatility and periodic spikes
 - **Price Distribution (Histogram)** — Right-skewed distribution of sale prices, showing the market is concentrated in the sub-$1M range with a long tail of high-end outliers
 - **Average Price by ZIP Code (Bubble Map)** — Geographic view of King County sales, sized/positioned by ZIP-level average price
 - **Top 10 ZIP Codes by Average Price (Horizontal Bar Chart)** — Highest-value ZIP codes ranked, led by 98039 (Medina)
@@ -20,7 +20,7 @@ A macro-level snapshot of the housing market for quick, high-level decision-maki
 
 ### 2. Property Analysis
 A property-level deep dive into what physical characteristics drive price.
-- **Living Area vs. Sale Price (Scatter Plot)** — Individual property-level plot; X = living area, Y = price, bubble size = lot size, color = grade — reveals a strong positive correlation between square footage and price, with grade clustering visible at the high end
+- **Living Area vs. Sale Price (Scatter Plot)** — An individual property-level plot (X = living area, Y = price, bubble size = lot size, color = grade) revealing a strong positive correlation between square footage and price, with high-grade properties clustering toward the upper end
 - **Average Price by Bedrooms / Bathrooms / Grade (Bar Charts)** — Isolates the price impact of each individual feature
 - **Property Detail Table** — Row-level listing of Property ID, ZIP Code, Price, Living Area, Lot Size, Bedrooms, Bathrooms, Grade, and Condition for granular inspection
 - **Price Decomposition Tree** — Interactive drill-down of total sales price through ZIP Code → Grade → Waterfront → Bedrooms
@@ -50,6 +50,11 @@ Comparative and segment-level trends across the broader market.
 - **Geographic disparity**: ZIP 98039 (Medina) has the highest average sale price in King County, while several ZIP codes sell $250K–$300K below the county-wide average
 - **Below-average is the norm**: 63.36% of homes sell below the overall market average, meaning a smaller number of high-value sales pull the average upward
 - **Luxury is a small segment**: Only a small share of properties qualify as luxury-grade (grade ≥ 10), yet they carry disproportionate weight on countywide average pricing
+- **Living area is the strongest visual price driver**: The Living Area vs. Sale Price scatter plot shows a clear, consistent upward trend — larger homes command higher prices, with high-grade properties (7+) clustering toward the upper end of both axes
+- **Condition ratings skew heavily toward "average"**: 64.92% of properties are rated Condition 3, meaning the housing stock is overwhelmingly in standard/average condition rather than excellent or poor
+- **Renovation adds a modest, not dramatic, price bump**: Renovated homes sell higher than non-renovated homes on average, but the gap is proportionally smaller than the waterfront premium — location/water access matters more to price than renovation status
+- **Basements carry a smaller premium than waterfront access**: Homes with basements sell for modestly more than those without, though the effect is far less pronounced than waterfront or living area
+- **House age is broadly distributed with a concentration in newer builds**: The largest single cluster of properties falls in the 15–20 year age range, suggesting a wave of construction/development roughly two decades before the sales data was recorded
 
 ## Key DAX Measures
 
