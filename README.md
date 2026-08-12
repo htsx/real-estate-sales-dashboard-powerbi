@@ -39,13 +39,17 @@ Comparative and segment-level trends across the broader market.
 - **Neighborhood Price Comparison (Table)** — Per-ZIP price difference from the overall market average, highlighting over/under-valued neighborhoods
 
 ## How to Use
-1. Download `_______` from this repository
+1. Download `Real Estate Sales.pbix` from this repository
 2. Open it in [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads) (free — no account required to view/explore locally)
 3. Use the slicer panel on the Executive Overview page to filter by ZIP Code, Sale Year, Bedrooms, Waterfront, or Grade
 4. Click into the Decomposition Tree on the Property Analysis page to drill through ZIP → Grade → Waterfront → Bedrooms
 
 ## Key Insights & Findings
-
+- **Waterfront premium**: Waterfront properties sell for roughly 3x the average price of non-waterfront properties
+- **Market concentration**: Most sales fall below $1M, with a long tail of high-end outliers pulling the average price ($540K) well above the median ($450K)
+- **Geographic disparity**: ZIP 98039 (Medina) has the highest average sale price in King County, while several ZIP codes sell $250K–$300K below the county-wide average
+- **Below-average is the norm**: 63.36% of homes sell below the overall market average, meaning a smaller number of high-value sales pull the average upward
+- **Luxury is a small segment**: Only a small share of properties qualify as luxury-grade (grade ≥ 10), yet they carry disproportionate weight on countywide average pricing
 
 ## Key DAX Measures
 
@@ -109,11 +113,11 @@ Comparative and segment-level trends across the broader market.
 Power BI Desktop, Power Query, DAX
 
 ## Screenshots
-# Executive Overview (Page 1)
+### Executive Overview (Page 1)
 <img width="1375" height="744" alt="executive-overview png" src="https://github.com/user-attachments/assets/9bfe4e50-453a-441e-ae3a-1cc04287059f" />
 
-# Property Analysis (Page 2)
+### Property Analysis (Page 2)
 <img width="1373" height="746" alt="property-analysis png" src="https://github.com/user-attachments/assets/bb8e3a2f-9795-4a0a-8cbb-93580faae0b0" />
 
-# Market Insights (Page 3)
+### Market Insights (Page 3)
 <img width="1371" height="747" alt="market-insights png" src="https://github.com/user-attachments/assets/47a802e4-0b34-49d3-aa66-3ceb4b6480c5" />
