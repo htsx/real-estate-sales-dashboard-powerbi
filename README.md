@@ -39,6 +39,10 @@ Comparative and segment-level trends across the broader market.
 - **Neighborhood Price Comparison (Table)** — Per-ZIP price difference from the overall market average, highlighting over/under-valued neighborhoods
 
 ## How to Use
+1. Download `_______` from this repository
+2. Open it in [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads) (free — no account required to view/explore locally)
+3. Use the slicer panel on the Executive Overview page to filter by ZIP Code, Sale Year, Bedrooms, Waterfront, or Grade
+4. Click into the Decomposition Tree on the Property Analysis page to drill through ZIP → Grade → Waterfront → Bedrooms
 
 ## Key Insights & Findings
 
