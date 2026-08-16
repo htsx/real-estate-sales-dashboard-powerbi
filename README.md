@@ -50,14 +50,13 @@ Comparative and segment-level trends across the broader market.
 - **Geographic disparity**: ZIP 98039 (Medina) has the highest average sale price in King County, while several ZIP codes sell $250K–$300K below the county-wide average
 - **Below-average is the norm**: 63.36% of homes sell below the overall market average, meaning a smaller number of high-value sales pull the average upward
 - **Luxury is a small segment**: Only a small share of properties qualify as luxury-grade (grade ≥ 10), yet they carry disproportionate weight on countywide average pricing
-- **Living area is the strongest visual price driver**: The Living Area vs. Sale Price scatter plot shows a clear, consistent upward trend — larger homes command higher prices, with high-grade properties (7+) clustering toward the upper end of both axes
+- **Living area is the strongest visual price driver**: The Living Area vs. Sale Price scatter plot shows a clear, consistent upward trend, larger homes command higher prices, with high-grade properties (7+) clustering toward the upper end of both axes
 - **Condition ratings skew heavily toward "average"**: 64.92% of properties are rated Condition 3, meaning the housing stock is overwhelmingly in standard/average condition rather than excellent or poor
-- **Renovation adds a modest, not dramatic, price bump**: Renovated homes sell higher than non-renovated homes on average, but the gap is proportionally smaller than the waterfront premium — location/water access matters more to price than renovation status
+- **Renovation adds a modest, not dramatic, price bump**: Renovated homes sell higher than non-renovated homes on average, but the gap is proportionally smaller than the waterfront premium, location/water access matters more to price than renovation status
 - **Basements carry a smaller premium than waterfront access**: Homes with basements sell for modestly more than those without, though the effect is far less pronounced than waterfront or living area
 - **House age is broadly distributed with a concentration in newer builds**: The largest single cluster of properties falls in the 5–10 year age range, suggesting a wave of construction/development shortly before the sales data was recorded.
 
 ## Key DAX Measures
-
 ### Executive KPIs
 - `Total Properties = COUNTROWS(mg_house_data)`
 - `Total Sales Value = SUM(mg_house_data[price])`
@@ -79,7 +78,7 @@ Comparative and segment-level trends across the broader market.
 - `Average Grade = AVERAGE(mg_house_data[grade])`
 - `Average Condition = AVERAGE(mg_house_data[condition])`
 - `Average View Rating = AVERAGE(mg_house_data[view])`
-- `Average House Age = AVERAGEX(mg_house_data, YEAR(TODAY()) - mg_house_data[yr_built])`
+- `Average House Age = AVERAGEX(mg_house_data, 2015 - mg_house_data[yr_built])`
 - `Average Neighborhood Living Area = AVERAGE(mg_house_data[sqft_living15])`
 - `Newest House = MAX(mg_house_data[yr_built])`
 - `Oldest House = MIN(mg_house_data[yr_built])`
@@ -89,12 +88,13 @@ Comparative and segment-level trends across the broader market.
 - `Average Waterfront Price = CALCULATE(AVERAGE(mg_house_data[price]), mg_house_data[waterfront] = 1)`
 - `Average Price (Non-Waterfront) = CALCULATE(AVERAGE(mg_house_data[price]), mg_house_data[waterfront] = 0)`
 - `Waterfront Price Premium = [Average Waterfront Price] - [Average Price (Non-Waterfront)]`
+- `Waterfront Price Ratio = DIVIDE([Average Waterfront Price], [Average Price (Non-Waterfront)])`
 - `Properties with View = CALCULATE(COUNTROWS(mg_house_data), mg_house_data[view] > 0)`
 
 ### Renovation & Basement
 - `Properties Renovated = CALCULATE(COUNTROWS(mg_house_data), mg_house_data[yr_renovated] > 0)`
 - `Renovation Rate = DIVIDE([Properties Renovated], [Total Properties])`
-- `Average Renovation Age = AVERAGEX(FILTER(mg_house_data, mg_house_data[yr_renovated] > 0), YEAR(TODAY()) - mg_house_data[yr_renovated])`
+- `Average Renovation Age = AVERAGEX(FILTER(mg_house_data, mg_house_data[yr_renovated] > 0), 2015 - mg_house_data[yr_renovated])`
 - `Homes with Basement = CALCULATE(COUNTROWS(mg_house_data), mg_house_data[sqft_basement] > 0)`
 - `Basement Percentage = DIVIDE([Homes with Basement], [Total Properties])`
 
