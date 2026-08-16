@@ -12,7 +12,7 @@ by Mayank Gautam, licensed under [CC BY-NC 4.0](https://creativecommons.org/lice
 ### 1. Executive Overview
 A macro-level snapshot of the housing market for quick, high-level decision-making.
 - **KPI Cards**: Total Properties (22K), Total Sales Value ($12bn), Average Price ($540.10K), Median Price ($450.00K), Average Price per SqFt ($259.67)
-- **Sales Trend (Line Chart)**: Average sale price over time (May 2014–May 2015), revealing price volatility and periodic spikes
+- **Sales Trend (Line Chart)**: Average sale price over time (May 2014 – May 2015), showing a seasonal dip in late fall/winter and a recovery into spring 2015
 - **Price Distribution (Histogram)**: Right-skewed distribution of sale prices, showing the market is concentrated in the sub-$1M range with a long tail of high-end outliers
 - **Average Price by ZIP Code (Bubble Map)**: Geographic view of King County sales, sized/positioned by ZIP-level average price
 - **Top 10 ZIP Codes by Average Price (Horizontal Bar Chart)**: Highest-value ZIP codes ranked, led by 98039 (Medina)
@@ -113,6 +113,8 @@ Comparative and segment-level trends across the broader market.
 - Corrected a mistyped 33-bedroom outlier record (should have been 3)
 - Filtered malformed/future-dated transaction records skewing the sales trend
 - Identified duplicate property ID entries in the source data
+- Corrected house age calculations that were anchored to the current date rather than the sale year, causing age figures to drift over time
+- Removed a partial leading month (May 2014, 1 property) and identified two single-day outliers (Oct 11 2014, May 27 2015) that were distorting the Sales Trend chart due to daily-level granularity; resolved by aggregating to monthly
 
 ## Tools
 Power BI Desktop, Power Query, DAX
