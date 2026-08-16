@@ -28,7 +28,7 @@ A property-level deep dive into what physical characteristics drive price.
 
 ### 3. Market Insights
 Comparative and segment-level trends across the broader market.
-- **Average Price by Waterfront (Bar Chart)**: Waterfront properties sell for roughly 3x the price of non-waterfront properties
+- **Average Price by Waterfront (Bar Chart)**: Waterfront properties sell for roughly 3.1x the price of non-waterfront properties
 - **Average Price by Basement Status (Bar Chart)**: Homes with basements command a modest price premium
 - **Average Price by Renovation Status (Bar Chart)**: Renovated homes sell above non-renovated homes on average
 - **Count of Properties by House Age (Histogram)**: Distribution of housing stock by age in years
@@ -45,7 +45,7 @@ Comparative and segment-level trends across the broader market.
 4. Click into the Decomposition Tree on the Property Analysis page to drill through ZIP → Grade → Waterfront → Bedrooms
 
 ## Key Insights & Findings
-- **Waterfront premium**: Waterfront properties sell for roughly 3.1x the average price of non-waterfront properties.
+- **Waterfront premium**: Waterfront properties sell for roughly 3.1x the price of non-waterfront properties
 - **Market concentration**: Most sales fall below $1M, with a long tail of high-end outliers pulling the average price ($540K) well above the median ($450K)
 - **Geographic disparity**: ZIP 98039 (Medina) has the highest average sale price in King County, while several ZIP codes sell $250K–$300K below the county-wide average
 - **Below-average is the norm**: 63.36% of homes sell below the overall market average, meaning a smaller number of high-value sales pull the average upward
