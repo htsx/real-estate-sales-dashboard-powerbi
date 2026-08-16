@@ -121,10 +121,11 @@ Power BI Desktop, Power Query, DAX
 
 ## Screenshots
 ### Executive Overview (Page 1)
-<img width="1375" height="744" alt="executive-overview png" src="https://github.com/user-attachments/assets/9bfe4e50-453a-441e-ae3a-1cc04287059f" />
+<img width="1269" height="717" alt="Screenshot 2026-08-16 014556" src="https://github.com/user-attachments/assets/a3030f92-e023-458b-a96a-4fb8bad1c831" />
 
 ### Property Analysis (Page 2)
-<img width="1373" height="746" alt="property-analysis png" src="https://github.com/user-attachments/assets/bb8e3a2f-9795-4a0a-8cbb-93580faae0b0" />
+<img width="1271" height="717" alt="Screenshot 2026-08-16 014605" src="https://github.com/user-attachments/assets/b872bca1-ec1a-4e90-8714-bf170c021fcf" />
 
 ### Market Insights (Page 3)
-<img width="1371" height="747" alt="market-insights png" src="https://github.com/user-attachments/assets/47a802e4-0b34-49d3-aa66-3ceb4b6480c5" />
+<img width="1272" height="719" alt="Screenshot 2026-08-16 014614" src="https://github.com/user-attachments/assets/7e9e260d-6a3c-4574-beaf-1b7d157b3bf7" />
+
