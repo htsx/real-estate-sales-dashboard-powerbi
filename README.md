@@ -54,7 +54,7 @@ Comparative and segment-level trends across the broader market.
 - **Condition ratings skew heavily toward "average"**: 64.92% of properties are rated Condition 3, meaning the housing stock is overwhelmingly in standard/average condition rather than excellent or poor
 - **Renovation adds a modest, not dramatic, price bump**: Renovated homes sell higher than non-renovated homes on average, but the gap is proportionally smaller than the waterfront premium — location/water access matters more to price than renovation status
 - **Basements carry a smaller premium than waterfront access**: Homes with basements sell for modestly more than those without, though the effect is far less pronounced than waterfront or living area
-- **House age is broadly distributed with a concentration in newer builds**: The largest single cluster of properties falls in the 15–20 year age range, suggesting a wave of construction/development roughly two decades before the sales data was recorded
+- **House age is broadly distributed with a concentration in newer builds**: The largest single cluster of properties falls in the 5–10 year age range, suggesting a wave of construction/development shortly before the sales data was recorded.
 
 ## Key DAX Measures
 
