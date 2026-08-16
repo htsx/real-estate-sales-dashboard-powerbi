@@ -11,32 +11,32 @@ by Mayank Gautam, licensed under [CC BY-NC 4.0](https://creativecommons.org/lice
 
 ### 1. Executive Overview
 A macro-level snapshot of the housing market for quick, high-level decision-making.
-- **KPI Cards** — Total Properties (22K), Total Sales Value ($12bn), Average Price ($540.10K), Median Price ($450.00K), Average Price per SqFt ($259.67)
-- **Sales Trend (Line Chart)** — Average sale price over time (May 2014–May 2015), revealing price volatility and periodic spikes
-- **Price Distribution (Histogram)** — Right-skewed distribution of sale prices, showing the market is concentrated in the sub-$1M range with a long tail of high-end outliers
-- **Average Price by ZIP Code (Bubble Map)** — Geographic view of King County sales, sized/positioned by ZIP-level average price
-- **Top 10 ZIP Codes by Average Price (Horizontal Bar Chart)** — Highest-value ZIP codes ranked, led by 98039 (Medina)
-- **Slicer Panel** — Independent filters for ZIP Code, Sale Year, Bedrooms, Waterfront, and Grade
+- **KPI Cards**: Total Properties (22K), Total Sales Value ($12bn), Average Price ($540.10K), Median Price ($450.00K), Average Price per SqFt ($259.67)
+- **Sales Trend (Line Chart)**: Average sale price over time (May 2014–May 2015), revealing price volatility and periodic spikes
+- **Price Distribution (Histogram)**: Right-skewed distribution of sale prices, showing the market is concentrated in the sub-$1M range with a long tail of high-end outliers
+- **Average Price by ZIP Code (Bubble Map)**: Geographic view of King County sales, sized/positioned by ZIP-level average price
+- **Top 10 ZIP Codes by Average Price (Horizontal Bar Chart)**: Highest-value ZIP codes ranked, led by 98039 (Medina)
+- **Slicer Panel**: Independent filters for ZIP Code, Sale Year, Bedrooms, Waterfront, and Grade
 
 ### 2. Property Analysis
 A property-level deep dive into what physical characteristics drive price.
-- **Living Area vs. Sale Price (Scatter Plot)** — An individual property-level plot (X = living area, Y = price, bubble size = lot size, color = grade) revealing a strong positive correlation between square footage and price, with high-grade properties clustering toward the upper end
-- **Average Price by Bedrooms / Bathrooms / Grade (Bar Charts)** — Isolates the price impact of each individual feature
-- **Property Detail Table** — Row-level listing of Property ID, ZIP Code, Price, Living Area, Lot Size, Bedrooms, Bathrooms, Grade, and Condition for granular inspection
-- **Price Decomposition Tree** — Interactive drill-down of total sales price through ZIP Code → Grade → Waterfront → Bedrooms
-- **Property Count by Condition (Donut Chart)** — Distribution of properties across condition ratings (majority rated "3")
+- **Living Area vs. Sale Price (Scatter Plot)**: An individual property-level plot (X = living area, Y = price, bubble size = lot size, color = grade) revealing a strong positive correlation between square footage and price, with high-grade properties clustering toward the upper end
+- **Average Price by Bedrooms / Bathrooms / Grade (Bar Charts)**: Isolates the price impact of each individual feature
+- **Property Detail Table**: Row-level listing of Property ID, ZIP Code, Price, Living Area, Lot Size, Bedrooms, Bathrooms, Grade, and Condition for granular inspection
+- **Price Decomposition Tree**: Interactive drill-down of total sales price through ZIP Code → Grade → Waterfront → Bedrooms
+- **Property Count by Condition (Donut Chart)**: Distribution of properties across condition ratings (majority rated "3")
 
 ### 3. Market Insights
 Comparative and segment-level trends across the broader market.
-- **Average Price by Waterfront (Bar Chart)** — Waterfront properties sell for roughly 3x the price of non-waterfront properties
-- **Average Price by Basement Status (Bar Chart)** — Homes with basements command a modest price premium
-- **Average Price by Renovation Status (Bar Chart)** — Renovated homes sell above non-renovated homes on average
-- **Count of Properties by House Age (Histogram)** — Distribution of housing stock by age in years
-- **Average Grade by ZIP Code (Bar Chart)** — Highest construction/design quality ratings by ZIP
-- **Total Properties by Luxury Status (Bar Chart)** — Standard vs. luxury-grade (grade ≥ 10) property split
-- **Homes Above vs. Below Market Average (Donut Chart)** — 63.36% of properties sell below the county-wide average price
-- **Average Condition by ZIP Code (Bar Chart)** — Property condition ratings by geography
-- **Neighborhood Price Comparison (Table)** — Per-ZIP price difference from the overall market average, highlighting over/under-valued neighborhoods
+- **Average Price by Waterfront (Bar Chart)**: Waterfront properties sell for roughly 3x the price of non-waterfront properties
+- **Average Price by Basement Status (Bar Chart)**: Homes with basements command a modest price premium
+- **Average Price by Renovation Status (Bar Chart)**: Renovated homes sell above non-renovated homes on average
+- **Count of Properties by House Age (Histogram)**: Distribution of housing stock by age in years
+- **Average Grade by ZIP Code (Bar Chart)**: Highest construction/design quality ratings by ZIP
+- **Total Properties by Luxury Status (Bar Chart)**: Standard vs. luxury-grade (grade ≥ 10) property split
+- **Homes Above vs. Below Market Average (Donut Chart)**: 63.36% of properties sell below the county-wide average price
+- **Average Condition by ZIP Code (Bar Chart)**: Property condition ratings by geography
+- **Neighborhood Price Comparison (Table)**: Per-ZIP price difference from the overall market average, highlighting over/under-valued neighborhoods
 
 ## How to Use
 1. Download `Real Estate Sales.pbix` from this repository
